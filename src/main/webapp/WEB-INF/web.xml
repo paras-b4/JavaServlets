@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+   <servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.paras.Addservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>pqr</servlet-name>
+	<servlet-class>com.paras.Sqservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>pqr</servlet-name>
+	<url-pattern>/sq</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+	<servlet-name>xyz</servlet-name>
+	<servlet-class>com.paras.Myservlet</servlet-class>
+	
+	<init-param>
+		<param-name>name</param-name>
+		<param-value>Sukesh</param-value>
+		
+	</init-param>
+	<init-param>
+		<param-name>gadget</param-name>
+		<param-value>oppo</param-value>
+		
+	</init-param>
+</servlet>
+
+<servlet-mapping>
+
+<servlet-name>xyz</servlet-name>
+<url-pattern>/home</url-pattern>
+
+</servlet-mapping>
+<context-param>
+	<param-name>name</param-name>
+	<param-value>Paras</param-value>
+</context-param>
+
+<context-param>
+	<param-name>gadget</param-name>
+	<param-value>Samsung</param-value>
+</context-param> 
+</web-app>
+</element>
